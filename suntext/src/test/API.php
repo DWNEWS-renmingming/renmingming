@@ -1,5 +1,5 @@
 <?php
-namespace renmingming\demo;
+namespace SunWei100\SunText\test;
 use Yii;
 
 class API{
@@ -9,6 +9,9 @@ class API{
 
 	//FACEBOOK登录回调处理
 	const GET_FACEBOOK_CALLBACK = 'get_facebook_callback';
+
+	//
+    const GET_FACEBOOK_USERINFO = 'get_facebook_userinfo';
 
 	//获取TWITTER 登录链接
 	const GET_TWITTER_BUTTON = 'get_twitter_button';
@@ -62,6 +65,9 @@ class API{
 					break;
 				case self::GET_FACEBOOK_CALLBACK:
 					$message = Facebooks::get_facebook_callback($data);
+                    break;
+                case self::GET_FACEBOOK_USERINFO:
+					$message = Facebooks::get_facebook_userinfo($data);
 					break;
 				case self::GET_TWITTER_BUTTON:
 					$message = Twitters::get_twitter_button($data);
@@ -99,9 +105,9 @@ class API{
 				case self::UPLOAD_AVATAR:
 					$message = Users::upload_avatar($data);
 					break;
-                		case self::GET_CAPTCHA_API:
-                    			$message = Users::get_captcha_api($data);
-                    			break;
+				case self::GET_CAPTCHA_API:
+                    $message = Users::get_captcha_api($data);
+                    break;
 				default:
 					$message = [];
 					break;

@@ -1,17 +1,14 @@
 {
-	"name": "r2547977230/renmingming",
+	"name": "sunwei100/suntext",
 	"description": "dwnews Oauth SDK for PHP",
 	"keywords": ["facebook","oauth","twitter","sdk"],
 	"type": "library",
-	"authors": [
-	    {
-			"name": "renmingming",
-			"email": "18201058764@163.com",
-			"homepage": "https://github.com/r2547977230/renmingming"
-
-	    }
+	"authors":[
+		{
+			"name": "Dwnews-php",
+			"homepage": "https://github.com/dwnews/dw_php_oauth_sdk"
+		}
 	],
-	"license": "MIT",
 	"require": {
 		"php": ">=5.6.0",
 		"facebook/graph-sdk": "~5.6.1",
@@ -26,8 +23,7 @@
 	],
 	"autoload": {
         "psr-4": {
-            "renmingming\\demo\\": "src/demo/"
+            "r2547977230\\SunText\\test\\": "src/test/"
         }
     }
-
 }
