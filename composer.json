@@ -1,0 +1,33 @@
+{
+    "name": "DWNEWS-renmingming/renmingming",
+    "description": "dwnews Oauth SDK for PHP",
+    "keywords": ["facebook","oauth","twitter","sdk"],
+    "homepage": "https://github.com/DWNEWS-renmingming/renmingming",
+    "type": "library",
+    "support": {
+		"source": "https://github.com/DWNEWS-renmingming/renmingming"
+	},
+    "authors": [
+        {
+            "name": "renmingming",
+            "email": "renmingming@dwnews.com"
+        }
+    ],
+    "require": {
+    	"php": ">=5.6.0",
+		"facebook/graph-sdk": "~5.6.1",
+		"abraham/twitteroauth": "~0.7.4",
+		"php-curl-class/php-curl-class": "~8.0.3"
+    },
+    "repositories": [
+		{
+			"type": "git",
+			"url": "git@github.com:DWNEWS-renmingming/renmingming.git"
+	    }
+	],
+	"autoload": {
+        "psr-4": {
+            "DWNEWS-renmingming\\renmingming\\test\\": ""
+        }
+    }
+}
